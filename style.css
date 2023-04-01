@@ -296,34 +296,28 @@ img svg path:hover {
   margin-bottom: 1vh;
 }
 /* hamburger */
-#hamburger-icon {
+.closeImg {
+  display: none;
+}
+#navigations-hamberger {
   margin: auto 0;
   display: none;
   cursor: pointer;
 }
 
-#hamburger-icon div {
+#navigations-hamberger img {
   width: 35px;
-  height: 3px;
-  background-color: hsl(233, 8%, 62%);
+  height: 35px;
   margin: 6px 0;
 }
-
-.open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
+.popup .closeImg {
+  display: block;
+}
+.popup .hamburgerImg {
+  display: none;
 }
 
-.open .bar2 {
-  opacity: 0;
-}
-
-.open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px);
-}
-
-.open .mobile-menu {
+.popup .mobile-nav-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,7 +326,7 @@ img svg path:hover {
   text-decoration: none;
 }
 
-.mobile-menu {
+.mobile-nav-list {
   display: none;
   position: absolute;
   padding: 0;
@@ -345,10 +339,10 @@ img svg path:hover {
   border-radius: 1vh;
 }
 
-.mobile-menu li {
+.mobile-nav-list li {
   margin-bottom: 1vh;
 }
-.mobile-menu li a {
+.mobile-nav-list li a {
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -359,7 +353,7 @@ img svg path:hover {
     display: none;
   }
 
-  #hamburger-icon {
+  #navigations-hamberger {
     display: block;
   }
   .header-container .request-button {
