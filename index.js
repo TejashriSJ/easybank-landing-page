@@ -1,3 +1,3 @@
-function toggleMobileMenu(menu) {
-  menu.classList.toggle("open");
+function openNavOptions(menu) {
+  menu.classList.toggle("popup");
 }
