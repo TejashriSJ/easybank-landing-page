@@ -30,8 +30,7 @@
     <header>
       <div class="header-container">
         <img class="logo" src="./images/logo.svg" alt="easybank-logo" />
-        <img class="hamberger" src="./images/icon-hamburger.svg" alt="hamberger-image" id="navigations-hamberger" onclick="displayMenu()">
-        <img class="cancle-navigation" src="./images/icon-close.svg" alt="navigation-close-image">
+        
         <nav class="navigations">
           <ul>
             <li><a href="">Home</a></li>
@@ -41,12 +40,12 @@
             <li><a href="">Careers</a></li>
           </ul>
         </nav>
+
         <button class="request-button">Request Invite</button>
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          <ul class="mobile-menu">
+        <div id="navigations-hamberger" onclick="openNavOptions(this)">
+            <img class="hamburgerImg" src="./images/icon-hamburger.svg" alt="hamburger-Image"/> 
+            <img class="closeImg"src="./images/icon-close.svg" alt="navigation-close-image"/>  
+           <ul class="mobile-nav-list">
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
