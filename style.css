@@ -286,6 +286,15 @@ img svg path:hover {
   font-size: 0.75em;
   align-self: flex-start;
 }
+.attribution a {
+  color: white;
+  font-size: 1em;
+}
+.attribution {
+  color: black;
+  text-align: center;
+  margin-bottom: 1vh;
+}
 /* hamburger */
 #hamburger-icon {
   margin: auto 0;
@@ -298,7 +307,6 @@ img svg path:hover {
   height: 3px;
   background-color: hsl(233, 8%, 62%);
   margin: 6px 0;
-  transition: 0.4s;
 }
 
 .open .bar1 {
