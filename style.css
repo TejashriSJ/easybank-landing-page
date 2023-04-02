@@ -2,7 +2,9 @@ body {
   font-size: 18px;
   font-family: "Public Sans", sans-serif;
 }
+
 /*header*/
+
 .header-container {
   display: flex;
   justify-content: space-around;
@@ -54,6 +56,8 @@ body {
 .request-button:hover {
   background: linear-gradient(to right, hsl(136, 65%, 70%), hsl(192, 70%, 70%));
 }
+
+/* section 1 */
 
 .section1 {
   display: flex;
@@ -110,7 +114,7 @@ body {
 }
 .section2 .heading-description {
   margin-left: 10vw;
-  color: hsl(233, 8%, 80%);
+  color: hsl(233, 8%, 62%);
   font-size: 1em;
   line-height: 2em;
 }
@@ -146,6 +150,7 @@ body {
 }
 
 /* section3 */
+
 .section3 {
   background-color: hsl(0, 0%, 98%);
   display: flex;
@@ -248,7 +253,7 @@ img svg path:hover {
   background-color: hsl(136, 65%, 51%);
 
   color: hsl(136, 65%, 51%);
-  fill: hsl(136, 65%, 51%); /* check this  and space between block in footer*/
+  fill: hsl(136, 65%, 51%);
 }
 .footer-block2 {
   display: flex;
@@ -295,7 +300,9 @@ img svg path:hover {
   text-align: center;
   margin-bottom: 1vh;
 }
+
 /* hamburger */
+
 .closeImg {
   display: none;
 }
@@ -306,9 +313,9 @@ img svg path:hover {
 }
 
 #navigations-hamberger img {
-  width: 35px;
-  height: 35px;
-  margin: 6px 0;
+  width: 10vw;
+  height: 4vh;
+  margin-right: 8vw;
 }
 .popup .closeImg {
   display: block;
@@ -321,8 +328,10 @@ img svg path:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2vh;
   justify-content: space-evenly;
   background-color: #fff;
+  box-shadow: 0vw 15vh 50vw hsl(0, 0%, 9%);
   text-decoration: none;
 }
 
@@ -348,6 +357,8 @@ img svg path:hover {
   cursor: pointer;
 }
 
+/* mobile and tab view */
+
 @media screen and (max-width: 900px) {
   .header-container .navigations {
     display: none;
@@ -362,6 +373,15 @@ img svg path:hover {
   .header-container {
     justify-content: space-between;
   }
+  .request-button {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    border-radius: 8vw;
+  }
+
+  /* section 1 */
 
   .section1 {
     background-image: url("./images/image-mockups.png"),
@@ -395,9 +415,14 @@ img svg path:hover {
     right: -9vw;
   }
 
+  /* section 2 */
+
   .section2 h3 {
     text-align: center;
     line-height: 6vh;
+  }
+  .section2 {
+    margin-top: -10vh;
   }
   .section2 .heading-description {
     text-align: center;
@@ -420,9 +445,13 @@ img svg path:hover {
     margin-bottom: 2vh;
     width: 80vw;
   }
+
+  /* section 3 */
+
   .section3 h3 {
     margin-left: 0vw;
     text-align: center;
+    font-size: 2em;
   }
   .articles {
     display: flex;
